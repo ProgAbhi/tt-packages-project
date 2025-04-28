@@ -48,20 +48,3 @@ Plain CSS
 
 4. Footer
 → Always visible, and shows the regions list on Home Page.
-
-
-
-
-
-
-
-src/
-├── App.js
-├── components/
-│   ├── Footer.js
-│   └── Layout.js
-├── pages/
-│   ├── HomePage.js
-│   ├── Regions.js
-│   ├── CityPage.js
-│   └── CityDetailPage.js
