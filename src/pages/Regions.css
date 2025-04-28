@@ -1,0 +1,52 @@
+.app-container {
+    padding: 40px 20px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+
+  .regions-no-bg {
+    padding: 40px 20px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background: rgba(55, 19, 91, 1);
+  }
+  .regions-no-bg .region-item {
+    color: white;
+  }
+
+  .regions-no-bg .region-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* light hover effect */
+  }
+
+.region-heading{
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+.region-list {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr); /* 11 columns x 2 rows = 22 regions */
+    gap: 10px;
+  }
+
+  .region-item {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    border-right: 1px solid white;
+    transition: background-color 0.2s;
+  }
+
+  .region-item:hover {
+    background-color: #e0e0e0;
+  }
+
+.errMsg{
+    text-align: center;
+    margin-top: 2rem;
+    color: red 
+}
