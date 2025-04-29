@@ -14,7 +14,7 @@ function Layout() {
     <div className="app-container">
       <main className='flexible'>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
           <Route path="/region/:id" element={<CityPage />} />
           <Route path="/city/:cityname" element={<CityDetailPage />} />
         </Routes>

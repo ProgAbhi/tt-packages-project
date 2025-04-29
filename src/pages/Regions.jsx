@@ -47,7 +47,7 @@ const Regions = ({ noBackground }) => {
 
     return (
     <div className={noBackground ? 'regions-no-bg' : 'app-container'}>
-        <p className='region-heading'>Regions</p>
+        <p className='region-heading'>List of Regions</p>
         <div className = "region-list">
         {regions.map((regionName) => (
             <div

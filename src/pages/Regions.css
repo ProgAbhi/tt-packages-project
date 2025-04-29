@@ -20,15 +20,15 @@
   }
 
 .region-heading{
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
     color: white;
 }
-
-.region-list {
+  
+  .region-list {
     display: grid;
-    grid-template-columns: repeat(11, 1fr); /* 11 columns x 2 rows = 22 regions */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 10px;
   }
 
@@ -36,7 +36,7 @@
     cursor: pointer;
     font-size: 14px;
     padding: 5px;
-    text-align: center;
+    text-align: left;
     border-right: 1px solid white;
     transition: background-color 0.2s;
   }
@@ -49,4 +49,25 @@
     text-align: center;
     margin-top: 2rem;
     color: red 
+}
+
+/* Responsive Design Part */
+
+@media (max-width: 600px) {
+  .region-heading {
+    font-size: 18px;
+  }
+
+  .region-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  
+  .region-item {
+    font-size: 13px;
+    padding: 8px;
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
 }

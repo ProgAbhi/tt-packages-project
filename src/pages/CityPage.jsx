@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
 import regionsData from '../data/regionsData.json'
+import { FaHome } from 'react-icons/fa';
 import './CityPage.css'
 
 function formatName(name) {
@@ -59,8 +60,10 @@ const CityPage = () => {
 
   return (
     <div className='detail-container'>
-      <button className='back-button' onClick={() => navigate(-1)}>← Back to Region List</button>
+      <button className='back-button' onClick={() => navigate('/')}> <FaHome style={{ marginRight: '8px' }} /> Back to Home Page</button>
       
+      <h1 className="section-heading">Region List</h1>
+
       <div className="region-list-on-citypage">
         {regionNames.map((regionName) => (
           <div
@@ -73,7 +76,7 @@ const CityPage = () => {
         ))}
       </div>
       
-      <h1 className='city-heading'>List of Cities in {formatName(id)}</h1>
+      <h2 className='city-heading'>List of Cities in {formatName(id)}</h2>
       <input
         type="text"
         placeholder="Search for a city..."
