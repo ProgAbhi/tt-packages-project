@@ -11,10 +11,10 @@ function Layout() {
   const isHomePage = location.pathname === '/';
 
   return (
-    <div className="app-container">
+    <div className="layout-container">
       <main className='flexible'>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage />} />
           <Route path="/region/:id" element={<CityPage />} />
           <Route path="/city/:cityname" element={<CityDetailPage />} />
         </Routes>

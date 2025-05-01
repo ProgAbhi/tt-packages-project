@@ -2,7 +2,9 @@
 import React, { useEffect, useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 import regionsData from '../data/regionsData.json'
+import DraggableScrollContainer from '../components/DraggableScrollContainer'
 import './Regions.css'
+
 
 function formatName(name) {
   return name
@@ -47,8 +49,10 @@ const Regions = ({ noBackground }) => {
 
     return (
     <div className={noBackground ? 'regions-no-bg' : 'app-container'}>
-        <p className='region-heading'>Regions</p>
-        <div className = "region-list">
+        <p className='region-heading'>List of Regions</p>
+        
+        {/* Use the draggable scroll container here */}
+        <DraggableScrollContainer className = "region-list">
         {regions.map((regionName) => (
             <div
             key={regionName}
@@ -58,7 +62,7 @@ const Regions = ({ noBackground }) => {
             {formatName(regionName)}
             </div>
         ))}
-        </div>
+        </DraggableScrollContainer>
     </div>
   )
 }

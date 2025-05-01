@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
 import regionsData from '../data/regionsData.json'
+import { FaHome } from 'react-icons/fa';
 import './CityPage.css'
 
 function formatName(name) {
@@ -15,8 +16,6 @@ function formatName(name) {
 const CityPage = () => {
   const { id } = useParams(); // id is the region name
   const [cities, setCities] = useState([]);
-  const [filteredCities, setFilteredCities] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -28,7 +27,6 @@ const CityPage = () => {
       const regionCities = regionsData[id];
       if (regionCities) {
         setCities(regionCities);
-        setFilteredCities(regionCities);
       } else {
         setError('Region not found');
       }
@@ -38,16 +36,6 @@ const CityPage = () => {
       setLoading(false);
     }
   }, [id]);
-
-  const handleSearch = (e) => {
-    const value = e.target.value.toLowerCase();
-    setSearchTerm(value);
-
-    const filtered = cities.filter(city => 
-      city.name.toLowerCase().includes(value)
-    );
-    setFilteredCities(filtered);
-  };
   
   if (loading) {
     return <div style={{ textAlign: 'center', marginTop: '2rem' }}>Loading...</div>;
@@ -59,8 +47,10 @@ const CityPage = () => {
 
   return (
     <div className='detail-container'>
-      <button className='back-button' onClick={() => navigate(-1)}>← Back to Region List</button>
+      <button className='back-button' onClick={() => navigate('/')}> <FaHome style={{ marginRight: '8px' }} /> Back to Home Page</button>
       
+      <h1 className="section-heading">Region List</h1>
+
       <div className="region-list-on-citypage">
         {regionNames.map((regionName) => (
           <div
@@ -73,18 +63,11 @@ const CityPage = () => {
         ))}
       </div>
       
-      <h1 className='city-heading'>List of Cities in {formatName(id)}</h1>
-      <input
-        type="text"
-        placeholder="Search for a city..."
-        value={searchTerm}
-        onChange={handleSearch}
-        className="searchInput"
-      />
+      <h2 className='city-heading'>List of Cities in {formatName(id)}</h2>
 
       <ul className="city-list">
-        {filteredCities.length > 0 ? (
-          filteredCities.map((city, index) => (
+        {cities.length > 0 ? (
+          cities.map((city, index) => (
             <li key={index} className="city-item" onClick={() => {
                 if (city && city.name) {
                   navigate(`/city/${city.name.toLowerCase().replace(/\s+/g, '-')}`);
