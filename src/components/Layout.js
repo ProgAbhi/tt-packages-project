@@ -11,7 +11,7 @@ function Layout() {
   const isHomePage = location.pathname === '/';
 
   return (
-    <div className="app-container">
+    <div className="layout-container">
       <main className='flexible'>
         <Routes>
         <Route path="/" element={<HomePage />} />

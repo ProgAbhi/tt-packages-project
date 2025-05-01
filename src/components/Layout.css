@@ -1,4 +1,4 @@
-.app-container{
+.layout-container{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -11,16 +11,8 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .app-container {
-        padding: 0 1rem;
-    }
-
     h2, h3 {
         font-size: 90%;
-    }
-
-    .flexible {
-        margin-top: 1rem;
     }
 
     footer {

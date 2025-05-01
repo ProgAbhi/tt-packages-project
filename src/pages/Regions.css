@@ -1,12 +1,11 @@
 .app-container {
-    padding: 40px 20px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
   }
 
   .regions-no-bg {
-    padding: 40px 20px;
+    padding: 5px 5px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
     background: rgba(55, 19, 91, 1);
@@ -21,24 +20,16 @@
 
 .region-heading{
     font-size: 22px;
-    margin-bottom: 20px;
     text-align: center;
     color: white;
 }
-  
-  .region-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
-  }
 
   .region-item {
-    cursor: pointer;
-    font-size: 14px;
-    padding: 5px;
-    text-align: left;
-    border-right: 1px solid white;
-    transition: background-color 0.2s;
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 8px 12px;
+    border-radius: 4px;
+    user-select: none;
   }
 
   .region-item:hover {
@@ -56,12 +47,6 @@
 @media (max-width: 600px) {
   .region-heading {
     font-size: 18px;
-  }
-
-  .region-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
   }
   
   .region-item {

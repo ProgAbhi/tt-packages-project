@@ -1,0 +1,16 @@
+.draggable-scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 13px 0;
+    scroll-behavior: smooth;
+    cursor: grab;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .draggable-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
