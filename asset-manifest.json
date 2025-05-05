@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tt-packages-project/static/css/main.552c388e.css",
+    "main.js": "/tt-packages-project/static/js/main.51389200.js",
+    "index.html": "/tt-packages-project/index.html",
+    "main.552c388e.css.map": "/tt-packages-project/static/css/main.552c388e.css.map",
+    "main.51389200.js.map": "/tt-packages-project/static/js/main.51389200.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.552c388e.css",
+    "static/js/main.51389200.js"
+  ]
+}
