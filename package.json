@@ -1,7 +1,7 @@
 {
-  "name": "tt-cities-project",
+  "name": "tt-packages-project",
   "version": "0.1.0",
-  "homepage": "https://ProgAbhi.github.io/tt-cities-project",
+  "homepage": "https://ProgAbhi.github.io/tt-packages-project",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
