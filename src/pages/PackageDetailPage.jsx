@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import packagesData from '../data/PackagesData.json';
+import packagesData from '../data/packagesData.json';
 import { PackageCard } from '../components/PackageCard';
 
 const PackageDetailPage = () => {

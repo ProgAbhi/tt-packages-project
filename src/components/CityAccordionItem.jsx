@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './CityAccordionItem.css';
 import { formatName } from '../utils/formatName';
-import packagesList from '../data/PackagesList.json'
+import packagesList from '../data/packagesList.json'
 
 const CityAccordionItem = ({ city, isExpanded, onToggle }) => {
   return (

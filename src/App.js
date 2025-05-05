@@ -4,7 +4,7 @@ import Layout from './components/Layout'; // Layout handles all routing and foot
 
 function App() {
   return (
-    <Router basename="/tt-cities-project">
+    <Router basename="/tt-packages-project">
       <Layout />
     </Router>
   );

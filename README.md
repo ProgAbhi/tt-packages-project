@@ -1,50 +1,70 @@
-## 📍 Regions and Cities Explorer
-A simple React project to explore regions, their cities, and city-specific details.
+# 🧭 Travel Explorer - A React Tourism App
+
+A simple and interactive **React** project to explore Tourism across various **regions** and **cities**, complete with categorized packages like **Tour**, **Family**, **Honeymoon**, and **Holiday** deals.
+
+## 🌍 Project Overview
+
+**Travel Explorer** helps users browse regions and their respective cities, and discover travel packages tailored to different travel styles. It's organized using React components, mock JSON data, and structured UI elements like accordions and cards for smooth navigation and display.
+
 
 ## ✨ Features
-🗺️ Browse a list of Regions on the Home page.
-🏙️ View a list of Cities within a selected Region.
-📄 Access a City Detail Page with information about a selected City.
-🔎 Search for cities within a region.
-🌟 Highlight the active region on city pages.
-📱 Responsive design for desktop and mobile screens.
+- 🗺 **Region & City Browsing** – Users can navigate from a region to its cities via accordions.
+- 🧳 **Package Categories** – View categorized travel packages (Tour, Family, Honeymoon, Holiday).
+- 💳 **Clickable Package Cards** – Interactive cards showing pricing, discounts, and details.
+- 🔗 **Detail Page Navigation** – Each package leads to a detailed view page.
+- 📱 **CSS** - Responsive design for desktop and mobile screens.
 
 ## 🚀 Project Structure
-src/
-├── components/
-│   ├── Footer.jsx
-│   ├── Layout.jsx
-├── pages/
-│   ├── HomePage.jsx
-│   ├── Regions.jsx
-│   ├── CityPage.jsx
-│   ├── CityDetailPage.jsx
-├── data/
-│   ├── regionsData.json
-├── App.jsx
-├── index.jsx
-
-Regions: Displays all regions.
-CityPage: Displays cities under a selected region + searchable list.
-CityDetailPage: Shows details for a specific city.
+tt-packages-project/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── CityAccordion.jsx
+│   │   ├── CityAccordion.css
+│   │   ├── DraggableScrollContainer.jsx
+│   │   ├── DraggableScrollContainer.css
+│   │   ├── Footer.jsx
+│   │   ├── Footer.css
+│   │   ├── Layout.jsx
+│   │   ├── Layout.css
+│   │   ├── PackageCard.jsx
+│   │   └── PackageCard.css
+│   ├── data/
+│   │   ├── packagesData.json
+│   │   ├── packagesList.json
+│   │   └── regionsData.json
+│   ├── pages/
+│   │   ├── CityPage.jsx
+│   │   ├── CityPage.css
+│   │   ├── HomePage.jsx
+│   │   ├── HomePage.css
+│   │   ├── PackageDetailPage.jsx
+│   │   └── PackageDetailPage.css
+│   ├── utils/
+│   │   └── formatName.js
+│   ├── App.js
+│   ├── index.js
+│   └── index.css
+├── package-lock.json
+├── package.json
+└── README.md
 
 ## 🛠️ Technologies Used
-React
-React Router (react-router-dom)
-Plain CSS
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/) for client-side routing
+- CSS for styling
+- JSON for mock data
 
 ## ⚡ How it Works
 1. Home Page
-→ Lists all regions.
+→ Lists all regions across draggable Footer section.
 → User clicks on a region.
 
 2. City Page
 → Shows cities within the selected region.
-→ Includes a search bar to find cities easily.
+→ Tour, Family, Honeymoon, and Holiday packages are categorized across each cities
 → Region names are shown and the selected region is highlighted.
 
-3. City Detail Page
-→ Shows specific information about the clicked city.
-
-4. Footer
-→ Always visible, and shows the regions list on Home Page.
+3. Package Detail Page
+→ Shows specific information about each packages.
