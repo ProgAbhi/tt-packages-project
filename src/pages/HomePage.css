@@ -1,4 +1,10 @@
 
+p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #555;
+}
+
 .lorem-section {
     padding: 20px;
     width: 100%;

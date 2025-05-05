@@ -1,0 +1,53 @@
+.regions-no-bg {
+    padding: 5px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background: rgba(55, 19, 91, 1);
+  }
+  
+  .region-heading {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+  }
+  
+  .region-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .region-item {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 8px 12px;
+    border-radius: 4px;
+    user-select: none;
+    color: white;
+  }
+  
+  .region-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .errMsg {
+    text-align: center;
+    margin-top: 2rem;
+    color: red;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .region-heading {
+      font-size: 18px;
+    }
+  
+    .region-item {
+      font-size: 13px;
+      padding: 8px;
+      border-right: none;
+      border-bottom: 1px solid white;
+    }
+  }
+  

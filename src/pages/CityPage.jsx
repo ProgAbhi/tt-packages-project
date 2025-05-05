@@ -3,19 +3,13 @@ import { useParams, useNavigate } from 'react-router-dom';
 import regionsData from '../data/regionsData.json'
 import { FaHome } from 'react-icons/fa';
 import './CityPage.css'
-
-function formatName(name) {
-  return name
-    .replace(/_/g, ' ')
-    .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-    .join(' ');
-}
-
+import CityAccordionItem from "../components/CityAccordionItem.jsx";
+import { formatName } from "../utils/formatName.js";
 
 const CityPage = () => {
   const { id } = useParams(); // id is the region name
   const [cities, setCities] = useState([]);
+  const [expandedCity, setExpandedCity] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
@@ -36,6 +30,10 @@ const CityPage = () => {
       setLoading(false);
     }
   }, [id]);
+
+  const toggleCity = (cityName) => {
+    setExpandedCity(expandedCity === cityName ? null : cityName);
+  };
   
   if (loading) {
     return <div style={{ textAlign: 'center', marginTop: '2rem' }}>Loading...</div>;
@@ -63,19 +61,12 @@ const CityPage = () => {
         ))}
       </div>
       
-      <h2 className='city-heading'>List of Cities in {formatName(id)}</h2>
+      <h1 className='city-heading'>Tourism in {formatName(id)}</h1>
 
       <ul className="city-list">
         {cities.length > 0 ? (
           cities.map((city, index) => (
-            <li key={index} className="city-item" onClick={() => {
-                if (city && city.name) {
-                  navigate(`/city/${city.name.toLowerCase().replace(/\s+/g, '-')}`);
-                } else {
-                  console.error('City name is undefined:', city);
-                }
-              }}>
-              {formatName(city.name)}</li>
+            <CityAccordionItem key={index} city={city} isExpanded = {expandedCity === city.name} onToggle = {toggleCity} />
           ))
         ) : (
           <li className="no-city-message">No cities found!</li>

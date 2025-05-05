@@ -1,6 +1,5 @@
 .detail-container {
     padding: 40px 20px;
-    max-width: 800px;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
@@ -12,6 +11,15 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s ease;
   }
   
   .back-button:hover {
@@ -20,7 +28,6 @@
 
   .section-heading {
     text-align: center;
-    font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
     color: rgba(55, 19, 91, 1);
@@ -52,33 +59,18 @@
   }
 
   .city-heading {
-    font-size: 24px;
+    font-weight: bold;
     text-align: center;
     margin: 40px auto 20px auto;
     color: rgba(55, 19, 91, 1);
   }
   
   .city-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 💥 responsive multiple columns */
-    gap: 10px;
     list-style: none;
     padding: 0;
     margin-top: 20px;
   }
 
-  .city-item {
-    background: #f0f0f0;
-    padding: 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-  }
-  
-  .city-item:hover {
-    background-color: #e0e0e0;
-  }
-  
   /* Style for "No cities found!" message */
   .no-city-message {
     text-align: center;

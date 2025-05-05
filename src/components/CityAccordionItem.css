@@ -1,0 +1,77 @@
+  .city-item {
+    list-style: none;
+    margin: 1rem 0;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  
+  .city-header {
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .accordion-icon {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .package-dropdown {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fafafa;
+  }
+  
+  .package-category {
+    margin-bottom: 2rem;
+  }
+  
+  .package-category h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 0.3rem;
+    text-align: center;
+  }
+  
+  .package-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
+  }
+  
+  .package-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .package-list li:hover {
+    background-color: #e9f5ff;
+    border-color: #90caf9;
+  }
+  
+  .package-list a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 500;
+  }
+  
+  .package-list a:hover {
+    text-decoration: underline;
+  }
+  

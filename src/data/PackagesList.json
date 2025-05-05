@@ -1,0 +1,51 @@
+{
+    "Tour Packages": [
+      { "id": 1, "name": "Mountain Explorer", "description": "Explore the scenic mountains of Leh" },
+      { "id": 2, "name": "Heritage Trail", "description": "Discover historic landmarks in Kargil" },
+      { "id": 3, "name": "Adventure Quest", "description": "Adventure in the Ladakh Range" },
+      { "id": 4, "name": "Cultural Circuit", "description": "Experience traditional life in Alchi" },
+      { "id": 5, "name": "Valley Discovery", "description": "Tour the Nubra and Sham Valleys" },
+      { "id": 6, "name": "Village Escape", "description": "Unwind in Chuchot and Turtuk villages" },
+      { "id": 7, "name": "Serene Lakes", "description": "Visit Pangong and Tsomoriri lakes" },
+      { "id": 8, "name": "Desert Expedition", "description": "Explore Hunder and its sand dunes" },
+      { "id": 9, "name": "Remote Routes", "description": "Travel to Karzok Gompa and Hanle" },
+      { "id": 10, "name": "Nomadic Trails", "description": "Nomadic culture in Changthang" }
+    ],
+    "Family Packages": [
+      { "id": 11, "name": "Family Fun in Leh", "description": "Kid-friendly sightseeing in Leh" },
+      { "id": 12, "name": "Relaxing Kargil", "description": "Leisure time with the family in Kargil" },
+      { "id": 13, "name": "Picnic at Pangong", "description": "Family time by the lake" },
+      { "id": 14, "name": "Heritage Day", "description": "Visit Alchi and nearby monasteries" },
+      { "id": 15, "name": "Nature Retreat", "description": "Walks and views in Nubra Valley" },
+      { "id": 16, "name": "Deskit Delight", "description": "Family fun at Deskit Monastery" },
+      { "id": 17, "name": "Sumur Serenity", "description": "Relaxing village life experience" },
+      { "id": 18, "name": "Sarchu Stopover", "description": "Camping with family" },
+      { "id": 19, "name": "Cultural Family Trip", "description": "Cultural shows in Sham Valley" },
+      { "id": 20, "name": "Hanle Stars", "description": "Stargazing experience for all ages" }
+    ],
+    "Honeymoon Packages": [
+      { "id": 21, "name": "Romantic Pangong", "description": "Romantic stay by the lake" },
+      { "id": 22, "name": "Starry Nights in Hanle", "description": "Couple stargazing trip" },
+      { "id": 23, "name": "Silence of Tsomoriri", "description": "Private moments in a remote setting" },
+      { "id": 24, "name": "Nubra Bliss", "description": "Ride camels together in Nubra" },
+      { "id": 25, "name": "Lakeside Love", "description": "Stay near Tsomoriri Lake" },
+      { "id": 26, "name": "Village Romance", "description": "Peaceful retreat in Turtuk" },
+      { "id": 27, "name": "Monastery Moments", "description": "Spiritual bonding at Deskit" },
+      { "id": 28, "name": "Hidden Valleys", "description": "Explore together in Sham Valley" },
+      { "id": 29, "name": "Leh by Night", "description": "City lights and quiet walks" },
+      { "id": 30, "name": "Chuchot Charm", "description": "Rustic charm for couples" }
+    ],
+    "Holiday Packages": [
+      { "id": 31, "name": "Summer in Leh", "description": "Beat the heat with mountain air" },
+      { "id": 32, "name": "Winter Kargil", "description": "Enjoy snow and warm hospitality" },
+      { "id": 33, "name": "Tsomoriri Break", "description": "Mid-year escape to Tsomoriri" },
+      { "id": 34, "name": "Valley Vibes", "description": "Holiday in Nubra and Sumur" },
+      { "id": 35, "name": "Desert Chill", "description": "Unwind in cold desert of Hunder" },
+      { "id": 36, "name": "Monastery Hopping", "description": "Relaxed visits to monasteries" },
+      { "id": 37, "name": "Lakeside Holiday", "description": "Stay by Pangong lake" },
+      { "id": 38, "name": "Wild Hanle", "description": "Nature escape with wildlife views" },
+      { "id": 39, "name": "Alchi Peace", "description": "Quiet temple visits" },
+      { "id": 40, "name": "Cultural Sarchu", "description": "Blend of nature and nomadic life" }
+    ]
+  }
+  
