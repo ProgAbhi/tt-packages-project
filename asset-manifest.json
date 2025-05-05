@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tt-packages-project/static/css/main.552c388e.css",
-    "main.js": "/tt-packages-project/static/js/main.51389200.js",
+    "main.js": "/tt-packages-project/static/js/main.a824c53c.js",
     "index.html": "/tt-packages-project/index.html",
     "main.552c388e.css.map": "/tt-packages-project/static/css/main.552c388e.css.map",
-    "main.51389200.js.map": "/tt-packages-project/static/js/main.51389200.js.map"
+    "main.a824c53c.js.map": "/tt-packages-project/static/js/main.a824c53c.js.map"
   },
   "entrypoints": [
     "static/css/main.552c388e.css",
-    "static/js/main.51389200.js"
+    "static/js/main.a824c53c.js"
   ]
 }
