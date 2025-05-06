@@ -1,15 +1,39 @@
+.home-container{
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h1{
+  text-align: center;
+}
 
-p {
+.header{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.content {
   font-size: 1.2rem;
   margin-top: 1rem;
   color: #555;
 }
 
-.lorem-section {
-    padding: 20px;
-    width: 100%;
+  .lorem-section {
     font-size: 14px;
     color: #444;
-    line-height: 1.8;
-    text-align: center;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  @media (max-width: 600px){
+    h1{
+      font-size: 1.5rem;
+    }
+    .header{
+      font-size: 1rem;
+    }
+    .lorem-section {
+      font-size: 10px;
+      line-height: 1;
+    }
   }

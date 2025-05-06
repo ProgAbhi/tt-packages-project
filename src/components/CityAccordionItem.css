@@ -1,11 +1,6 @@
   .city-item {
     list-style: none;
-    margin: 1rem 0;
-    border: 1px solid #ddd;
-    border-radius: 12px;
     overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   }
   
   .city-header {
@@ -13,10 +8,10 @@
     font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
-    background-color: #f5f5f5;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.1);
   }
   
   .accordion-icon {
@@ -36,33 +31,22 @@
   }
   
   .package-category h3 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     margin-bottom: 0.75rem;
     color: #333;
-    border-bottom: 2px solid #e0e0e0;
     padding-bottom: 0.3rem;
-    text-align: center;
   }
   
   .package-list {
     list-style: none;
-    padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 0.75rem;
   }
   
   .package-list li {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 0.5rem 0.75rem;
     transition: all 0.2s ease-in-out;
-  }
-  
-  .package-list li:hover {
-    background-color: #e9f5ff;
-    border-color: #90caf9;
   }
   
   .package-list a {
@@ -74,4 +58,49 @@
   .package-list a:hover {
     text-decoration: underline;
   }
+
+  .toggle-button {
+    display: inline-block;
+    margin: 10px auto 0;
+    padding: 6px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: #6c5ce7;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: #5a4fcf;
+    transform: translateY(-1px);
+  }
+  
+  .toggle-button:active {
+    transform: scale(0.98);
+  }
+  
+
+  @media (max-width: 600px) {
+    .package-dropdown {
+      display: block;
+  }
+  .city-header {
+    padding: 1rem;
+    font-weight: 600;
+  }
+
+  .city-header h2{
+    font-size: 28px;
+  }
+
+  .package-category h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  
+}
   

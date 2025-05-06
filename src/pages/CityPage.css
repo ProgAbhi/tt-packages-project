@@ -1,6 +1,8 @@
-.detail-container {
-    padding: 40px 20px;
+.city-container {
+    width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 40px 20px;
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     border-radius: 12px;
@@ -18,7 +20,7 @@
     font-size: 1rem;
     border-radius: 8px;
     cursor: pointer;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     transition: background-color 0.3s ease;
   }
   
@@ -31,12 +33,6 @@
     font-weight: bold;
     margin-bottom: 20px;
     color: rgba(55, 19, 91, 1);
-  }
-
-  .region-list-on-citypage {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
   }
   
   .region-name {
@@ -59,16 +55,16 @@
   }
 
   .city-heading {
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 700;
     text-align: center;
-    margin: 40px auto 20px auto;
+    margin: 20px auto;
     color: rgba(55, 19, 91, 1);
   }
   
   .city-list {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
   }
 
   /* Style for "No cities found!" message */
@@ -78,4 +74,17 @@
     color: #888;
     grid-column: span 2; /* Stretch message across columns */
   }
-  
+
+  @media (max-width: 600px) {
+    .city-container {
+      padding: 20px;
+    }
+    .back-button{
+      margin-bottom: 0;
+    }
+    .city-heading {
+      font-size: 30px;
+      margin: 10px auto;
+  }
+
+  }

@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
 import regionsData from '../data/regionsData.json'
 import { FaHome } from 'react-icons/fa';
-import './CityPage.css'
+import DraggableScrollContainer from "../components/DraggableScrollContainer.jsx";
 import CityAccordionItem from "../components/CityAccordionItem.jsx";
 import { formatName } from "../utils/formatName.js";
+import './CityPage.css'
 
 const CityPage = () => {
   const { id } = useParams(); // id is the region name
@@ -44,12 +45,12 @@ const CityPage = () => {
   }
 
   return (
-    <div className='detail-container'>
-      <button className='back-button' onClick={() => navigate('/')}> <FaHome style={{ marginRight: '8px' }} /> Back to Home Page</button>
+    <div className='city-container'>
+      <button className='back-button' onClick={() => navigate('/')}> <FaHome style={{ marginRight: '8px' }} /></button>
       
       <h1 className="section-heading">Region List</h1>
 
-      <div className="region-list-on-citypage">
+      <DraggableScrollContainer className="region-list">
         {regionNames.map((regionName) => (
           <div
             key={regionName}
@@ -59,7 +60,7 @@ const CityPage = () => {
             {formatName(regionName)}
           </div>
         ))}
-      </div>
+        </DraggableScrollContainer>
       
       <h1 className='city-heading'>Tourism in {formatName(id)}</h1>
 

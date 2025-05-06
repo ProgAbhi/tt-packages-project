@@ -2,15 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import regionsData from '../data/regionsData.json';
 import DraggableScrollContainer from '../components/DraggableScrollContainer';
+import { formatName } from '../utils/formatName';
 import './Footer.css';
-
-function formatName(name) {
-  return name
-    .replace(/_/g, ' ')
-    .split(' ')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-    .join(' ');
-}
 
 function Footer({ showRegions }) {
   const [regions, setRegions] = useState([]);

@@ -3,11 +3,11 @@ import './HomePage.css'
 
 function HomePage() {
   return (
-    <div style={{textAlign: 'center'}}>
+    <div className='home-container'>
       <h1>Welcome to Our App</h1>
-      <p>Select a region from the footer below to explore cities!</p>
+      <p className='header'>Select a region from the footer below to explore cities!</p>
       <section className="lorem-section">
-      <p>
+      <p className='content'>
       Welcome to our amazing platform! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Discover regions, cities, and more! Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
       Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
