@@ -4,14 +4,12 @@ A simple and interactive **React** project to explore Tourism across various **r
 
 ## 🌍 Project Overview
 
-**Travel Explorer** helps users browse regions and their respective cities, and discover travel packages tailored to different travel styles. It's organized using React components, mock JSON data, and structured UI elements like accordions and cards for smooth navigation and display.
+**Travel Explorer** helps users browse regions and their respective cities, and discover travel packages tailored to different travel styles. It's organized using React components, mock JSON data, and structured UI elements like accordions and draggableScroll for smooth navigation and display.
 
 
 ## ✨ Features
 - 🗺 **Region & City Browsing** – Users can navigate from a region to its cities via accordions.
 - 🧳 **Package Categories** – View categorized travel packages (Tour, Family, Honeymoon, Holiday).
-- 💳 **Clickable Package Cards** – Interactive cards showing pricing, discounts, and details.
-- 🔗 **Detail Page Navigation** – Each package leads to a detailed view page.
 - 📱 **CSS** - Responsive design for desktop and mobile screens.
 
 ## 🚀 Project Structure
@@ -27,20 +25,15 @@ tt-packages-project/
 │   │   ├── Footer.jsx
 │   │   ├── Footer.css
 │   │   ├── Layout.jsx
-│   │   ├── Layout.css
-│   │   ├── PackageCard.jsx
-│   │   └── PackageCard.css
+│   │   └── Layout.css
 │   ├── data/
-│   │   ├── packagesData.json
 │   │   ├── packagesList.json
 │   │   └── regionsData.json
 │   ├── pages/
 │   │   ├── CityPage.jsx
 │   │   ├── CityPage.css
 │   │   ├── HomePage.jsx
-│   │   ├── HomePage.css
-│   │   ├── PackageDetailPage.jsx
-│   │   └── PackageDetailPage.css
+│   │   └── HomePage.css
 │   ├── utils/
 │   │   └── formatName.js
 │   ├── App.js
@@ -65,6 +58,3 @@ tt-packages-project/
 → Shows cities within the selected region.
 → Tour, Family, Honeymoon, and Holiday packages are categorized across each cities
 → Region names are shown and the selected region is highlighted.
-
-3. Package Detail Page
-→ Shows specific information about each packages.
