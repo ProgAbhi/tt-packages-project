@@ -4,7 +4,7 @@ import './HomePage.css'
 function HomePage() {
   return (
     <div className='home-container'>
-      <h1>Welcome to Our App</h1>
+      <h1>Welcome to Travel Explorer</h1>
       <p className='header'>Select a region from the footer below to explore cities!</p>
       <section className="lorem-section">
       <p className='content'>

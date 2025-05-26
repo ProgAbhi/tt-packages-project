@@ -4,7 +4,7 @@ import Layout from './components/Layout'; // Layout handles all routing and foot
 
 function App() {
   return (
-    <Router basename="/tt-packages-project">
+    <Router basename="/ProgAbhi/tt-travel-explorer">
       <Layout />
     </Router>
   );
