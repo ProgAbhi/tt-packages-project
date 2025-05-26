@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tt-travel-explorer/static/css/main.80707eab.css",
-    "main.js": "/tt-travel-explorer/static/js/main.384fcd81.js",
+    "main.js": "/tt-travel-explorer/static/js/main.008f7f9a.js",
     "index.html": "/tt-travel-explorer/index.html",
     "main.80707eab.css.map": "/tt-travel-explorer/static/css/main.80707eab.css.map",
-    "main.384fcd81.js.map": "/tt-travel-explorer/static/js/main.384fcd81.js.map"
+    "main.008f7f9a.js.map": "/tt-travel-explorer/static/js/main.008f7f9a.js.map"
   },
   "entrypoints": [
     "static/css/main.80707eab.css",
-    "static/js/main.384fcd81.js"
+    "static/js/main.008f7f9a.js"
   ]
 }
