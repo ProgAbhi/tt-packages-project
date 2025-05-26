@@ -1,7 +1,7 @@
 {
   "name": "tt-travel-explorer",
   "version": "0.1.0",
-  "homepage": "https://github.com/ProgAbhi/tt-travel-explorer",
+  "homepage": "https://progabhi.github.io/tt-travel-explorer",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -16,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-     "dev": "react-scripts start",
+    "dev": "react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
