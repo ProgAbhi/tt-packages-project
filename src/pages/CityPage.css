@@ -29,12 +29,20 @@
   }
 
   .section-heading {
-    text-align: center;
+    font-size: 32px;
     font-weight: bold;
+    text-align: center;
     margin-bottom: 20px;
     color: rgba(55, 19, 91, 1);
   }
   
+  .regions-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
   .region-name {
     cursor: pointer;
     padding: 8px 14px;
@@ -81,6 +89,9 @@
     }
     .back-button{
       margin-bottom: 0;
+    }
+    .section-heading {
+      font-size: 30px;
     }
     .city-heading {
       font-size: 30px;

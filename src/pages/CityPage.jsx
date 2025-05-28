@@ -48,9 +48,9 @@ const CityPage = () => {
     <div className='city-container'>
       <button className='back-button' onClick={() => navigate('/')}> <FaHome style={{ marginRight: '8px' }} /></button>
       
-      <h1 className="section-heading">Region List</h1>
+      <h1 className="section-heading">Regions List</h1>
 
-      <DraggableScrollContainer className="region-list">
+      <DraggableScrollContainer className="regions-list">
         {regionNames.map((regionName) => (
           <div
             key={regionName}

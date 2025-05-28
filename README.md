@@ -15,7 +15,8 @@ A simple and interactive **React** project to explore Tourism across various **r
 ## 🚀 Project Structure
 tt-packages-project/
 ├── public/
-│   └── index.html
+│   ├── index.html
+│   └── manifest.json
 ├── src/
 │   ├── components/
 │   │   ├── CityAccordion.jsx

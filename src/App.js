@@ -1,12 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import CityPage from './pages/CityPage';
 import Layout from './components/Layout'; // Layout handles all routing and footer
 
 function App() {
   return (
-    <Router basename="/tt-travel-explorer">
-      <Layout />
-    </Router>
+    <Routes>
+      <Route path="/" element={<Layout> <HomePage /> </Layout>}/>
+      <Route path="/region/:id" element={<Layout> <CityPage /> </Layout>}/>
+    </Routes>
   );
 }
 
